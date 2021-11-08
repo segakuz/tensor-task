@@ -1,9 +1,9 @@
-
 from .pages.images_page import ImagesPage
 from .pages.images_search_page import ImagesSearchPage
 from .pages.links import SearchPageLinks
 from .pages.search_page import SearchPage
 import pytest
+
 
 @pytest.mark.test_images
 class TestYandexImages():

@@ -2,6 +2,7 @@ from selenium.webdriver.common.keys import Keys
 from .locators import SearchPageLocators
 from .base_page import BasePage
 
+
 class SearchPage(BasePage):
 
     def should_be_search_field(self):

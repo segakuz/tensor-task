@@ -1,6 +1,7 @@
 from .locators import SearchResultPageLocators
 from .base_page import BasePage
 
+
 class SearchResultPage(BasePage):
 
     def should_appear_search_result(self):

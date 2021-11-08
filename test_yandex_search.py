@@ -1,8 +1,8 @@
-
 from .pages.links import SearchPageLinks
 from .pages.search_page import SearchPage
 from .pages.search_result_page import SearchResultPage
 import pytest
+
 
 @pytest.mark.test_position
 class TestYandexSearch():

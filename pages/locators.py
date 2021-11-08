@@ -1,5 +1,6 @@
 from selenium.webdriver.common.by import By
 
+
 class SearchPageLocators():
     SEARCH_FIELD = (By.CSS_SELECTOR, 'input#text')
     SUGGESTIONS_TABLE = (By.CSS_SELECTOR, '.mini-suggest__popup_visible > ul.mini-suggest__popup-content')
