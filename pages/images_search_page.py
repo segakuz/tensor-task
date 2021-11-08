@@ -31,10 +31,14 @@ class ImagesSearchPage(BasePage):
     def open_first_image(self):
         print('Открываем первую картинку')
 
+        self.should_be_first_image()
+
         first_image = self.browser.find_element(*ImagesSearchPageLocators.FIRST_IMAGE)
         self.first_image_url = first_image.get_attribute('href')
         first_image.click()
 
+    def should_be_first_image(self):
+        assert self.is_element_present(*ImagesSearchPageLocators.FIRST_IMAGE), 'Can not find first image element'
 
     def first_image_should_be_opened_successfully(self):
         self.should_be_image_view()
